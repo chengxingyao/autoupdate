@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.cheng.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        manifestPlaceholders = [
+                BDAPPID: "8235504",
+                BDAPPKEY : "kMe1fyBG8RqcLgInyZOx39Dy4K731noh"
+
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //定义各个渠道所不同的属性
+    productFlavors {
+        //360
+        channel_360
+        //百度
+        channel_baidu
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    channel_baiduCompile project(path: ':bdautoupdate')
+    channel_360Compile project(path: ':c360update')
+}

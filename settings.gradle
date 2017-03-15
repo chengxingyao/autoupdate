@@ -1,0 +1,1 @@
+include ':app', ':bdautoupdate', ':c360update'
