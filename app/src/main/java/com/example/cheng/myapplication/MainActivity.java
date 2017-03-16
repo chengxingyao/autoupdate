@@ -1,13 +1,14 @@
 package com.example.cheng.myapplication;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.cqyanyu.AppUpdateInfo;
-import com.cqyanyu.AutoUpdate;
-import com.cqyanyu.CPCheckUpdateCallback;
-import com.cqyanyu.UICheckUpdateCallback;
+import com.autoupdate.AppUpdateInfo;
+import com.autoupdate.AutoUpdate;
+import com.autoupdate.CPCheckUpdateCallback;
+import com.autoupdate.UICheckUpdateCallback;
+
 
 public class MainActivity extends AppCompatActivity {
 
