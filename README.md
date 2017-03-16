@@ -58,7 +58,7 @@ dependencies {
 
 ```
 ##### 调用自动更新
-```
+```java
    //自动更新
   AutoUpdate.uiUpdateAction(this, new UICheckUpdateCallback() {
       @Override
@@ -68,7 +68,7 @@ dependencies {
    });
 ```
 ##### 手动检测版本更新
-```
+```java
 //手动检测版本
  AutoUpdate.cpUpdateCheck(this, new CPCheckUpdateCallback() {
       @Override
@@ -77,8 +77,8 @@ dependencies {
   }
  });
 ```
-
+百度自动更新样式
 ![百度自动更新样式](http://upload-images.jianshu.io/upload_images/2937228-48bc937353fafea0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
-
+360自动更新样式
 ![360自动更新样式](http://upload-images.jianshu.io/upload_images/2937228-433b11390b418e69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
