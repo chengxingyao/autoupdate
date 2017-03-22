@@ -2,6 +2,7 @@
 
     <string name="bdp_update_request_net_error">网络错误，请重试</string>
     
+    <string name="bdp_update_tip_waiting">等待下载</string>
     <string name="bdp_update_title_download">发现新版本</string>
     <string name="bdp_update_title_install">发现新版本安装包</string>
     <string name="bdp_update_title_as">提示</string>
@@ -22,5 +23,7 @@
     <string name="bdp_update_as_install_tip">推荐您使用百度手机助手进行升级。您尚未安装百度手机助手，请先安装。</string>
     <string name="bdp_update_as_action_install">安装</string>
     <string name="bdp_update_as_action_cancel">取消</string>
+    
+    <string name="bdp_update_install_file_not_exist">安装包已被删除</string>
 
 </resources>

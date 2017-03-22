@@ -1,4 +1,4 @@
-package com.cqyanyu;
+package com.autoupdate;
 
 /**
  * Created by cheng on 2016/7/11.

@@ -3,13 +3,7 @@
 
     <application>
 
-        <!-- 百度 -->
-        <meta-data
-            android:name="BDAPPID"
-            android:value="${BDAPPID}" />
-        <meta-data
-            android:name="BDAPPKEY"
-            android:value="${BDAPPKEY}" />
+
 
         <activity
             android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"

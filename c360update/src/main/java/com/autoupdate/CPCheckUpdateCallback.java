@@ -1,4 +1,4 @@
-package com.cqyanyu;
+package com.autoupdate;
 
 public interface CPCheckUpdateCallback   {
 

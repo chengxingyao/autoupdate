@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.0"
@@ -8,7 +8,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
-        versionName "1.0"
+        versionName "0.1"
     }
     buildTypes {
         release {
@@ -22,11 +22,22 @@ android {
         }
     }
 }
-
+ext {
+    PUBLISH_GROUP_ID = 'com.autoupdate'
+    PUBLISH_ARTIFACT_ID = 'bdautoupdate'
+    PUBLISH_VERSION = android.defaultConfig.versionName
+}
+uploadArchives {
+    repositories.mavenDeployer {
+        def deployPath = file("F:\\maven")
+        repository(url: "file://${deployPath.absolutePath}")
+        pom.project {
+            groupId project.PUBLISH_GROUP_ID
+            artifactId project.PUBLISH_ARTIFACT_ID
+            version project.PUBLISH_VERSION
+        }
+    }
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0'
-    compile files('libs/BDAutoUpdateSDK_20150605_V1.2.0.jar')
-    compile files('libs/need_lib.jar')
 }

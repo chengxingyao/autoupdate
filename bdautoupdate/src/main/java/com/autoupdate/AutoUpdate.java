@@ -1,4 +1,4 @@
-package com.cqyanyu;
+package com.autoupdate;
 
 import android.content.Context;
 import android.widget.Toast;

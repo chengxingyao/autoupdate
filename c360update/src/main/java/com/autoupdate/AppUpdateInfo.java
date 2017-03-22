@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.cqyanyu;
+package com.autoupdate;
 
 public class AppUpdateInfo {
     private int versionCode;
