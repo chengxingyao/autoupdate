@@ -33,9 +33,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:25.2.0'
-    channel_baiduCompile "com.autoupdate:bdautoupdate:0.1"
-    channel_360Compile "com.autoupdate:c360update:0.1"
-
-//    channel_baiduCompile project(path: ':bdautoupdate')
-//    channel_360Compile project(path: ':c360update')
+//    channel_baiduCompile "com.autoupdate:bdautoupdate:0.1"
+//    channel_360Compile "com.autoupdate:c360update:0.1"
+    channel_baiduCompile project(path: ':bdautoupdate')
+    channel_360Compile project(path: ':c360update')
 }
